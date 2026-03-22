@@ -1,0 +1,9 @@
+services:
+  application:
+    #image: study-http-image-3
+    build:
+      context: .
+      network: host
+    container_name: application-container
+    ports:
+      - "8080:8080"
